@@ -54,7 +54,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        /* My Colors */
+        /* My Colors
         light: {
           'background': '#FFFFFF',
           'primary': '#0A192F',
@@ -68,7 +68,7 @@ module.exports = {
           'secondary': '#F2F3F4',
           'tertiary': '#D9DBE1',
           'hover': '#112240',
-        },
+        },*/
       },
       borderRadius: {
         lg: `var(--radius)`,
