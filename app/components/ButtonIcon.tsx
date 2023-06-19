@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { FC } from 'react'
 import { Button } from './ui/button'
-import { Mail, Linkedin, Github, Code2 } from 'lucide-react'
+import { Mail, Linkedin, Github, Code2, Menu } from 'lucide-react'
 
 const iconMap = {
     'mail': Mail,
     'linkedin': Linkedin,
     'github': Github,
-    'code': Code2
+    'code': Code2,
+    'menu': Menu
 }
 
 interface ButtonIconProps {
