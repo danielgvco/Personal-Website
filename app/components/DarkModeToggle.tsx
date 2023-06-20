@@ -10,13 +10,23 @@ const iconMap = {
 }
 
 const DarkModeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+        if (typeof window !== 'undefined') {
+            const theme = window.localStorage.getItem('theme');
+            if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                return true;
+            }
+        }
+        return false;
+    });
 
     useEffect(() => {
         if (isDarkMode) {
             document.body.classList.add('dark');
+            window.localStorage.setItem('theme', 'dark');
         } else {
             document.body.classList.remove('dark');
+            window.localStorage.setItem('theme', 'light');
         }
     }, [isDarkMode]);
 
