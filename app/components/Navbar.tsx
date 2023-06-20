@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonIcon from "./ButtonIcon";
 import ButtonRoute from "./ButtonRoute";
-import { SheetSize } from './NavbarMobile'
+import NavbarMobile from './NavbarMobile'
 
 import { FC } from 'react'
 
@@ -26,7 +26,7 @@ const Navbar: FC = () => {
                 <li><ButtonIcon iconName="mail" label="Contact Me" route="/contact" variant="default" target="" rel="" style="max-h-11" /></li>
             </ul>
             <div className="lg:hidden">
-                <SheetSize />
+                <NavbarMobile />
             </div>
         </nav>
     )

@@ -1,11 +1,15 @@
 import Image from 'next/image'
-import { SheetSize } from './components/NavbarMobile'
-import DarkModeToggle from './components/DarkModeToggle'
+import TypingEffect from './components/TypingEffect'
 
 export default function Home() {
   return (
-    <h1>
-      Home Page
-    </h1>
+    <div className="full_height">
+      <div>
+        <h1>
+          <span>Daniel</span>
+          <span>Vargas</span>
+        </h1>
+      </div>
+    </div>
   )
 }

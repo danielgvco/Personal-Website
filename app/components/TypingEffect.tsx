@@ -1,8 +1,8 @@
 "use client"
 
-import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from 'react-typing-effect'
 
-import { FC } from 'react';
+import { FC } from 'react'
 
 interface TypingEffectProps {
   words?: string[]
@@ -14,8 +14,8 @@ const TypingEffect: FC<TypingEffectProps> = ({words=['Hello.', 'Hola.', 'Bonjour
         text={words}
         speed={100}
         eraseSpeed={50}
-        typingDelay={500}
-        eraseDelay={1000}
+        typingDelay={250}
+        eraseDelay={750}
     />
   )
 }

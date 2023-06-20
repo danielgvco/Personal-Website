@@ -16,7 +16,7 @@ import {
     SheetTrigger,
 } from "./ui/sheet"
 
-export function SheetSize() {
+const NavbarMobile = ():JSX.Element => {
     return (
         <div className="flex flex-col space-y-8">
             <Sheet>
@@ -46,3 +46,5 @@ export function SheetSize() {
         </div>
     )
 }
+
+export default NavbarMobile
