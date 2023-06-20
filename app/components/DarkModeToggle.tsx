@@ -4,11 +4,6 @@ import { useEffect, useState } from 'react';
 import { Button } from "./ui/button"
 import { SunMedium, Moon } from 'lucide-react'
 
-const iconMap = {
-    'sun': SunMedium,
-    'moon': Moon,
-}
-
 const DarkModeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
         if (typeof window !== 'undefined') {

@@ -29,7 +29,7 @@ const ButtonIcon: FC<ButtonIconProps> = ({ iconName, route = '/', style, iconCol
     const Icon = iconMap[iconName]
 
     return (
-        <Button asChild variant={variant} className={style}>
+        <Button asChild variant={variant} className={`h-full w-full ${style}`}>
             <Link href={route} target={target} rel={rel}>
                 <Icon color={iconColor} className='h-full aspect-square' />
                 {label && <span className='ml-2'>{label}</span>}
