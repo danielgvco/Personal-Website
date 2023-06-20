@@ -31,7 +31,7 @@ const DarkModeToggle = () => {
     }, [isDarkMode]);
 
     return (
-        <Button className='w-full' variant="outline" onClick={() => setIsDarkMode(!isDarkMode)}>
+        <Button className='w-full h-full' variant="outline" onClick={() => setIsDarkMode(!isDarkMode)}>
             <SunMedium className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
             <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
         </Button>

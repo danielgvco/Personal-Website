@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter, Ubuntu } from 'next/font/google'
 import Navbar from './components/Navbar'
+import DarkModeToggle from './components/DarkModeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,9 @@ export default function RootLayout({
       <body className={ubuntu.className}>
         <Navbar />
         {children}
+        <div className='absolute bottom-4 left-4 h-12 w-16'>
+          <DarkModeToggle />
+        </div>
       </body>
     </html>
   )
