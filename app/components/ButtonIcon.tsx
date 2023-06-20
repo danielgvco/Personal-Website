@@ -1,19 +1,21 @@
 import Link from 'next/link'
 import { FC } from 'react'
 import { Button } from './ui/button'
-import { Mail, Linkedin, Github, Code2, Menu } from 'lucide-react'
+import { Mail, Linkedin, Github, Code2, Menu, SunMedium, Moon } from 'lucide-react'
 
 const iconMap = {
     'mail': Mail,
     'linkedin': Linkedin,
     'github': Github,
     'code': Code2,
-    'menu': Menu
+    'menu': Menu,
+    'sun': SunMedium,
+    'moon': Moon,
 }
 
 interface ButtonIconProps {
     iconName: keyof typeof iconMap
-    iconColor?: string
+    iconColor?: string | undefined
     route?: string
     label?: string
     style?: string
@@ -23,7 +25,7 @@ interface ButtonIconProps {
     onClick?: () => void
 }
 
-const ButtonIcon: FC<ButtonIconProps> = ({ iconName, route = '/', style, iconColor = '#0A192F', variant = null, label, target = '_blank', rel = 'noopener noreferrer' }) => {
+const ButtonIcon: FC<ButtonIconProps> = ({ iconName, route = '/', style, iconColor, variant = null, label, target = '_blank', rel = 'noopener noreferrer' }) => {
     const Icon = iconMap[iconName]
 
     return (
