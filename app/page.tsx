@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import TypingEffect from './components/TypingEffect'
+import { ToastSimple } from './components/ToastSimple'
+import { Toast } from '@radix-ui/react-toast'
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
           <span>Vargas</span>
         </h1>
       </div>
+      <ToastSimple />
     </div>
   )
 }
