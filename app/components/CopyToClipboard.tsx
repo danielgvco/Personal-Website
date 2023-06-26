@@ -10,26 +10,26 @@ interface CopyToClipboardProps {
 }
 
 const CopyToClipboard: FC<CopyToClipboardProps> = ({ text }) => {
-    const { toast } = useToast()
+  const { toast } = useToast()
 
-    const copyToClipboard = async () => {
-        try {
-            await navigator.clipboard.writeText(text)
-            toast({
-                description: "Copied to clipboard!",
-            })
-        } catch (err) {
-            toast({
-                description: "Failed to copy to clipboard!",
-            })
-        }
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(text)
+      toast({
+        description: "Copied to clipboard!",
+      })
+    } catch (err) {
+      toast({
+        description: "Failed to copy to clipboard!",
+      })
     }
+  }
 
-    return (
-        <Button onClick={copyToClipboard} variant="ghost">
-            <Copy />
-        </Button>
-    )
+  return (
+    <Button onClick={copyToClipboard} variant="ghost">
+      <Copy />
+    </Button>
+  )
 }
 
 export default CopyToClipboard

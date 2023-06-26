@@ -11,13 +11,13 @@ interface ButtonRouteProps {
 }
 
 const ButtonRoute: FC<ButtonRouteProps> = ({route='/', label, style, variant = null, onClick}) => {
-    return (
-        <Button asChild variant={variant} className={style} onClick={onClick}>
-            <Link href={route}>
-                {label}
-            </Link>
-        </Button>
-    )
+  return (
+    <Button asChild variant={variant} className={style} onClick={onClick}>
+      <Link href={route}>
+        {label}
+      </Link>
+    </Button>
+  )
 }
 
 export default ButtonRoute
