@@ -34,9 +34,8 @@ const NavbarMobile = ():JSX.Element => {
           </ul>
           <div className="flex flex-col space-y-4 mt-56">
             <ul className="flex justify-between">
-              <li className="w-1/4"><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" style="w-full" variant="outline"/></li>
-              <li className="w-1/4"><ButtonIcon iconName="github" route="https://github.com/danielgvco" style="w-full" variant="outline"/></li>
-              <li className="w-1/4"><DarkModeToggle/></li>
+              <li className="w-2/5"><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" style="w-full" variant="outline"/></li>
+              <li className="w-2/5"><ButtonIcon iconName="github" route="https://github.com/danielgvco" style="w-full" variant="outline"/></li>
             </ul>
             <SheetClose asChild><Button asChild><Link href="/projects"><Code2 className="h-full aspect-square"/><span className="ml-2">PROJECTS</span></Link></Button></SheetClose>
             <SheetClose asChild><Button asChild variant="outline"><Link href="/contact"><Mail className="h-full aspect-square"/><span className="ml-2">CONTACT ME</span></Link></Button></SheetClose>
