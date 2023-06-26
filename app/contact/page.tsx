@@ -6,16 +6,16 @@ import CopyToClipboard from '../components/CopyToClipboard'
 
 export default function Contact() {
   return (
-    <div className='full_height flex flex-col items-center justify-center'>
-      <div className='mx-auto w-3/4 flex space-x-4'>
-        <div className='p-4 w-1/3 rounded-xl h-fit shadow-md'>
+    <div className='full_height flex flex-col justify-center'>
+      <div className='mx-auto w-3/4 flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0'>
+        <div className='p-4 w-full rounded-xl h-fit shadow-md lg:w-1/3'>
           <h2 className='pl-4 mb-4'>Contact Information</h2>
           <div className='flex'>
             <Button variant="link"><Mail className='mr-2' />work@danielgv.co</Button>
             <CopyToClipboard text='work@danielgv.co'/>
           </div>
         </div>
-        <div className='w-2/3 p-4 rounded-xl shadow-md'>
+        <div className='w-full p-4 rounded-xl shadow-md lg:w-2/3'>
           <h2 className='mb-4'>Contact Form</h2>
           <InputReactHookForm />
         </div>
