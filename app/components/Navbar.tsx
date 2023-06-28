@@ -12,8 +12,8 @@ const Navbar: FC = () => {
     <nav className="flex h-14 max-h-14 items-center justify-between px-4 top-0 shadow">
       <div className="animate-fade-down animate-once animate-delay-0 animate-ease-in-out">
         <Link href="/">
-          <Image src='/DANIEL VARGAS Light.png' alt="logo" width={300} height={45} className="dark:hidden" />
-          <Image src='/DANIEL VARGAS Dark.png' alt="logo" width={300} height={45} className="hidden dark:flex"/>
+          <Image src='/DANIEL VARGAS Light.png' alt="logo-lightmode" width={300} height={45} className="dark:hidden" />
+          <Image src='/DANIEL VARGAS Dark.png' alt="logo-darkmode" width={300} height={45} className="hidden dark:flex"/>
         </Link>
       </div>
       <ul className="hidden lg:flex items-center space-x-2">
