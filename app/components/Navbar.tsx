@@ -9,8 +9,9 @@ import { FC } from 'react'
 
 const Navbar: FC = () => {
   return (
-    <nav className="flex h-14 items-center justify-between px-4 top-0 shadow">
-      <div className="animate-fade-down animate-once animate-delay-0 animate-ease-in-out">
+    <nav className="flex h-14 max-h-14 items-center justify-between px-4 top-0 shadow">
+      <div className="flex font-700 text-[2rem]"><span>{'>'}</span><span className="animate-fade animate-infinite animate-duration-[1500ms] animate-ease-in-out">_</span><span>DANIEL VARGAS</span></div>
+      <div className="hidden animate-fade-down animate-once animate-delay-0 animate-ease-in-out">
         <Link href="/">
           <Image src='/logo.jpg' alt="logo" width={275} height={50} />
         </Link>
