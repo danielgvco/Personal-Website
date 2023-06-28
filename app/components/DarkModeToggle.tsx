@@ -5,17 +5,15 @@ import { Button } from "./ui/button"
 import { SunMedium, Moon } from 'lucide-react'
 
 const DarkModeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    setIsDarkMode(() => {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
       const theme = window.localStorage.getItem('theme');
-      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      if (theme === 'dark') {
         return true;
       }
-      return false;
-    });
-  }, []);
+    }
+    return false;
+  });
 
   useEffect(() => {
     if (isDarkMode) {
