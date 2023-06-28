@@ -10,27 +10,27 @@ import { FC } from 'react'
 const Navbar: FC = () => {
   return (
     <nav className="flex h-14 items-center justify-between px-4 top-0 shadow">
-      <div>
+      <div className="animate-fade-down animate-once animate-delay-0 animate-ease-in-out">
         <Link href="/">
           <Image src='/logo.jpg' alt="logo" width={275} height={50} />
         </Link>
       </div>
       <ul className="hidden lg:flex items-center space-x-2">
-        <li><ButtonRoute label="Home" route="/" variant="ghost" /></li>
-        <li><ButtonRoute label="About" route="/about" variant="ghost" /></li>
-        <li><ButtonRoute label="Projects" route="/projects" variant="ghost" /></li>
-        <li><ButtonRoute label="Resume" route="/resume" variant="ghost" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[100ms] animate-ease-in-out"><ButtonRoute label="Home" route="/" variant="ghost" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[200ms] animate-ease-in-out"><ButtonRoute label="About" route="/about" variant="ghost" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[300ms] animate-ease-in-out"><ButtonRoute label="Projects" route="/projects" variant="ghost" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[400ms] animate-ease-in-out"><ButtonRoute label="Resume" route="/resume" variant="ghost" /></li>
       </ul>
       <ul className="hidden lg:flex items-center space-x-2 max-h-11">
-        <li><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" variant="outline" /></li>
-        <li><ButtonIcon iconName="github" route="https://github.com/danielgvco" variant="outline" /></li>
-        <li><DarkModeToggle /></li>
-        <li><ButtonIcon iconName="mail" label="Contact Me" route="/contact" variant="default" target="" rel="" style="max-h-11" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[500ms] animate-ease-in-out"><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" variant="outline" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[600ms] animate-ease-in-out"><ButtonIcon iconName="github" route="https://github.com/danielgvco" variant="outline" /></li>
+        <li className="animate-fade-down animate-once animate-delay-[700ms] animate-ease-in-out"><DarkModeToggle /></li>
+        <li className="animate-fade-down animate-once animate-delay-[800ms] animate-ease-in-out"><ButtonIcon iconName="mail" label="Contact Me" route="/contact" variant="default" target="" rel="" style="max-h-11" /></li>
       </ul>
-      <div className="lg:hidden flex items-center space-x-2">
-        <DarkModeToggle />
-        <NavbarMobile />
-      </div>
+      <ul className="lg:hidden flex items-center space-x-2">
+        <li className="animate-fade-down animate-once animate-delay-[100ms] animate-ease-in-out"><DarkModeToggle /></li>
+        <li className="animate-fade-down animate-once animate-delay-[200ms] animate-ease-in-out"><NavbarMobile /></li>
+      </ul>
     </nav>
   )
 }
