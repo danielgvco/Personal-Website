@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="full_height bg-gradient-to-b from-white via-stone-200 to-gray-400">
+    <div className="full_height">
       <div>
         <h1>
           <span>Daniel</span>
