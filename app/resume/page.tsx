@@ -28,7 +28,7 @@ export default function Resume() {
             <li className="flex lg:hidden"><ButtonIcon iconName="github" route="https://github.com/danielgvco" variant="outline" /></li>
             <li className="flex lg:hidden"><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" variant="outline" /></li>
             <li className="flex lg:hidden"><ButtonIcon iconName="mail" route="/contact" variant="outline" target="" rel="" /></li>
-            <li><Button><Download className='mr-2' />Download PDF</Button></li>
+            <li><a href='/Resume - Daniel Vargas.pdf' download><Button><Download className='mr-2' />Download PDF</Button></a></li>
           </ul>
         </div>
         <div className='w-full p-4 rounded-xl space-y-6 shadow-md animate-fade-down animate-once animate-delay-150 animate-ease-in-out'>
