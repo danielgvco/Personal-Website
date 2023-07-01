@@ -20,7 +20,7 @@ export default function Resume() {
             <div className='flex flex-row justify-center lg:flex-col'>
               <li className='text-lg'>Daniel Vargas</li>
               <li className='lg:hidden px-2'>|</li>
-              <li className='text-lg'><Link href="/">work@danielgv.co</Link></li>
+              <li className='text-lg'>work@danielgv.co</li>
             </div>
             <li className='flex justify-center lg:flex-col'>Vancouver, B.C.</li>
           </ul>

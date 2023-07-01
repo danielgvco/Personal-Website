@@ -17,7 +17,7 @@ export default function Contact() {
         <div className='p-4 w-full rounded-xl h-fit shadow-md lg:w-1/3 animate-fade-down animate-once animate-ease-in-out'>
           <h2 className='pl-4 mb-4'>Contact Information</h2>
           <div className='flex'>
-            <Button variant="link"><Mail className='mr-2' />work@danielgv.co</Button>
+            <div className='flex p-2'><Mail className='mr-2' />work@danielgv.co</div>
             <CopyToClipboard text='work@danielgv.co'/>
           </div>
         </div>
