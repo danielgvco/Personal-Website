@@ -18,9 +18,9 @@ export default function Resume() {
         <div className='p-4 w-full rounded-xl h-fit space-y-4 shadow-md lg:w-fit lg:min-w-[15rem] animate-fade-down animate-once animate-ease-in-out'>
           <ul className='flex flex-col'>
             <div className='flex flex-row justify-center lg:flex-col'>
-              <li>Daniel Vargas</li>
+              <li className='text-lg'>Daniel Vargas</li>
               <li className='lg:hidden px-2'>|</li>
-              <li><Link href="/">work@danielgv.co</Link></li>
+              <li className='text-lg'><Link href="/">work@danielgv.co</Link></li>
             </div>
             <li className='flex justify-center lg:flex-col'>Vancouver, B.C.</li>
           </ul>
@@ -28,11 +28,22 @@ export default function Resume() {
             <li className="flex lg:hidden"><ButtonIcon iconName="github" route="https://github.com/danielgvco" variant="outline" /></li>
             <li className="flex lg:hidden"><ButtonIcon iconName="linkedin" route="https://www.linkedin.com/in/danielgvco/" variant="outline" /></li>
             <li className="flex lg:hidden"><ButtonIcon iconName="mail" route="/contact" variant="outline" target="" rel="" /></li>
-            <li><Button><Download className='mr-2'/>Download PDF</Button></li>
+            <li><Button><Download className='mr-2' />Download PDF</Button></li>
           </ul>
         </div>
-        <div className='w-full p-4 rounded-xl shadow-md animate-fade-down animate-once animate-delay-150 animate-ease-in-out'>
-          <h1 className='mb-4'>Resume</h1>
+        <div className='w-full p-4 rounded-xl space-y-4 shadow-md animate-fade-down animate-once animate-delay-150 animate-ease-in-out'>
+          <div className=''>
+            <h2 className='font-700 text-xl border-b border-gray-300'>Skills</h2>
+          </div>
+          <div className=''>
+            <h2 className='font-700 text-xl border-b border-gray-300'>Projects</h2>
+          </div>
+          <div className=''>
+            <h2 className='font-700 text-xl border-b border-gray-300'>Education</h2>
+          </div>
+          <div className=''>
+            <h2 className='font-700 text-xl border-b border-gray-300'>Certifications</h2>
+          </div>
         </div>
       </div>
     </div>
