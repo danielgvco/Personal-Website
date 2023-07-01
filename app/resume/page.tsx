@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Resume() {
   return (
-    <div className='full_height flex flex-col my-10'>
+    <div className='flex flex-col my-5'>
       <div className='mx-auto w-11/12 flex flex-col space-y-4 mb-5 lg:w-3/4 lg:flex-row lg:space-x-4 lg:space-y-0'>
         <div className='p-4 w-full rounded-xl h-fit space-y-4 shadow-md lg:w-fit lg:min-w-[15rem] animate-fade-down animate-once animate-ease-in-out'>
           <ul className='flex flex-col'>
