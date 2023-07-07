@@ -1,6 +1,12 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:mdx/recommended"
+  ],
   "rules": {
-    "indent": ["error", 2]
+    "indent": [
+      "error",
+      2
+    ]
   }
 }
