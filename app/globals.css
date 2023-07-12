@@ -84,6 +84,10 @@
   overflow-y: auto;
 }
 
-.full_height_no_scroll {
+.full_height_footer {
   height: calc(100vh - 7rem);
+}
+
+.full_height_no_scroll {
+  height: calc(100vh - 9rem);
 }
