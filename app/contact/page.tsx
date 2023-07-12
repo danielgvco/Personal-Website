@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import { Metadata } from 'next'
 import { InputReactHookForm } from '../components/InputReactHookForm'
-import { Button } from '../components/ui/button'
 import { Mail } from "lucide-react"
 import CopyToClipboard from '../components/CopyToClipboard'
 
