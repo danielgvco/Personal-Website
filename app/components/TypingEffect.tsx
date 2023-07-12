@@ -1,16 +1,26 @@
-"use client"
+'use client'
 
-import ReactTypingEffect from 'react-typing-effect'
-
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 interface TypingEffectProps {
   words?: string[]
 }
 
 const TypingEffect: FC<TypingEffectProps> = ({words=['Hello.', 'Hola.', 'Bonjour.', 'Ciao.', '你好.', 'こんにちは.', '안녕하세요.']}) => {
+  const [TypingComponent, setTypingComponent] = useState<any>(null);
+
+  useEffect(() => {
+    import('react-typing-effect').then((module) => {
+      setTypingComponent(() => module.default);
+    });
+  }, []);
+
+  if (!TypingComponent) {
+    return null;
+  }
+
   return (
-    <ReactTypingEffect
+    <TypingComponent
       text={words}
       speed={100}
       eraseSpeed={50}
@@ -20,4 +30,4 @@ const TypingEffect: FC<TypingEffectProps> = ({words=['Hello.', 'Hola.', 'Bonjour
   )
 }
 
-export default TypingEffect
+export default TypingEffect;
