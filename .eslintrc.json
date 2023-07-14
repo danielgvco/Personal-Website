@@ -1,7 +1,6 @@
 {
   "extends": [
-    "next/core-web-vitals",
-    "plugin:mdx/recommended"
+    "next/core-web-vitals"
   ],
   "rules": {
     "indent": [
