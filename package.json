@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "postinstall": "bash ./postbuild-fix/scripts/contentlayer-fix.sh",
+    "postbuild": "bash ./postbuild-fix/scripts/contentlayer-fix.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
