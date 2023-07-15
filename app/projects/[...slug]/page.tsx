@@ -127,6 +127,8 @@ export default async function PostPage({ params }: PostPageProps) {
                   key={author._id}
                   href={`https://github.com/${author.github}`}
                   className="flex items-center space-x-2 text-sm"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Image
                     src={author.avatar}
