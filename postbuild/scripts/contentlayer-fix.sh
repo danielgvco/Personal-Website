@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Run npm install
-npm install
+# Set the path to the target folder
+target_folder="./node_modules"
+
+# Check if the target folder doesn't exist
+if [ ! -d "$target_folder" ]; then
+  # Run npm install if the target folder doesn't exist
+  npm install
+fi
 
 # Replace the corrupted lines with the fixed ones
 sed -i '' '7c\
