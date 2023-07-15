@@ -7,8 +7,8 @@
     "build": "npm install && next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "postinstall": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh",
-    "postbuild": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh"
+    "postinstall": "bash ./postbuild/scripts/copy_env.sh && bash ./postbuild/scripts/contentlayer-fix.sh",
+    "postbuild": "bash ./postbuild/scripts/copy_env.sh && bash ./postbuild/scripts/contentlayer-fix.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
