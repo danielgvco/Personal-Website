@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
+    "preinstall": "chmod +x ./postbuild/scripts/contentlayer-fix.sh && chmod +x ./postbuild/scripts/copy_env.sh",
+    "prebuild": "chmod +x ./postbuild/scripts/contentlayer-fix.sh && chmod +x ./postbuild/scripts/copy_env.sh",
     "postinstall": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh",
     "postbuild": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh"
   },
