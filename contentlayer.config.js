@@ -50,7 +50,7 @@ export const Post = defineDocumentType(() => ({
     },
     date: {
       type: "date",
-      required: true,
+      required: false,
     },
     published: {
       type: "boolean",
@@ -58,7 +58,7 @@ export const Post = defineDocumentType(() => ({
     },
     image: {
       type: "string",
-      required: true,
+      required: false,
     },
     authors: {
       // Reference types are not embedded.
@@ -67,7 +67,7 @@ export const Post = defineDocumentType(() => ({
       // of: Author,
       type: "list",
       of: { type: "string" },
-      required: true,
+      required: false,
     },
   },
   computedFields,
@@ -99,7 +99,7 @@ export const Author = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "./app/content",
-  documentTypes: [Page, Doc, Guide, Post, Author],
+  documentTypes: [Doc, Post, Author],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
