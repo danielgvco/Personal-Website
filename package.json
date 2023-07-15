@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "postbuild": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh"
+    "postinstall": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
