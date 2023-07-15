@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Run npm install
+npm install
+
 # Replace the corrupted lines with the fixed ones
 sed -i '' '7c\
 import pkg from '\''@opentelemetry/sdk-trace-base'\'';\
