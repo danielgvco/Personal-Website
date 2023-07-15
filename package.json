@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm install",
-    "build": "next build",
+    "build": "npm install && next build",
     "start": "next start",
     "lint": "next lint --fix",
     "postinstall": "bash ./postbuild/scripts/contentlayer-fix.sh && bash ./postbuild/scripts/copy_env.sh",
