@@ -50,7 +50,7 @@ export const Post = defineDocumentType(() => ({
     },
     date: {
       type: "date",
-      required: false,
+      required: true,
     },
     published: {
       type: "boolean",
@@ -58,7 +58,7 @@ export const Post = defineDocumentType(() => ({
     },
     image: {
       type: "string",
-      required: false,
+      required: true,
     },
     authors: {
       // Reference types are not embedded.
@@ -67,7 +67,7 @@ export const Post = defineDocumentType(() => ({
       // of: Author,
       type: "list",
       of: { type: "string" },
-      required: false,
+      required: true,
     },
   },
   computedFields,

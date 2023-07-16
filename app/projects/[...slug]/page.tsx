@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { notFound } from "next/navigation"
 import { allAuthors, allPosts } from "contentlayer/generated"
 
@@ -20,7 +19,7 @@ interface PostPageProps {
   }
 }
 
-async function getPostFromParams(params) {
+async function getPostFromParams(params: PostPageProps["params"]) {
   const slug = params?.slug?.join("/")
   const post = allPosts.find((post) => post.slugAsParams === slug)
 
