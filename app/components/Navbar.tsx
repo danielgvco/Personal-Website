@@ -18,7 +18,6 @@ const Navbar: FC = () => {
       </div>
       <ul className="hidden lg:flex items-center space-x-2">
         <li className="animate-fade-down animate-once animate-delay-[100ms] animate-ease-in-out"><ButtonRoute label="HOME" route="/" variant="ghost" /></li>
-        <li className="animate-fade-down animate-once animate-delay-[200ms] animate-ease-in-out"><ButtonRoute label="ABOUT" route="/about" variant="ghost" /></li>
         <li className="animate-fade-down animate-once animate-delay-[300ms] animate-ease-in-out"><ButtonRoute label="PROJECTS" route="/projects" variant="ghost" /></li>
         <li className="animate-fade-down animate-once animate-delay-[400ms] animate-ease-in-out"><ButtonRoute label="RESUME" route="/resume" variant="ghost" /></li>
       </ul>

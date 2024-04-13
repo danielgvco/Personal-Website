@@ -29,7 +29,6 @@ const NavbarMobile = ():JSX.Element => {
           </SheetHeader>
           <ul className="grid gap-4 py-4 text-center mt-8">
             <li><SheetClose asChild><ButtonRoute route="/" label="HOME" /></SheetClose></li>
-            <li><SheetClose asChild><ButtonRoute route="/about" label="ABOUT" /></SheetClose></li>
             <li><SheetClose asChild><ButtonRoute route="/resume" label="RESUME" /></SheetClose></li>
           </ul>
           <div className="flex flex-col space-y-4 mt-56">
